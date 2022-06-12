@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "Liberation Sans";
+	src: url('../assets/fonts/LiberationSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Liberation Sans";
+	src: url('../assets/fonts/LiberationSans-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Liberation Sans";
+	src: url('../assets/fonts/LiberationSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Liberation Sans";
+	src: url('../assets/fonts/LiberationSans-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Liberation Sans;
+	color: black;
+}
+
+a {
+	font-family: Liberation Sans;
+	font-weight: bold !important;
+	font-size: 1.5rem !important;
+	color: black !important;
+}
+
+
+.main-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	gap: 0px;
+}
