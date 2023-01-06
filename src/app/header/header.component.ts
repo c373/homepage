@@ -11,4 +11,8 @@ export class HeaderComponent {
 
   constructor() {
   }
+
+  test(): void {
+    console.log('test');
+  }
 }

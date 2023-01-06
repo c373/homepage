@@ -1,0 +1,11 @@
+<div class="flex-column">
+  <div class="heading">
+    <h4>{{heading | uppercase}}</h4>
+  </div>
+  <div class="links flex-column">
+    <a *ngFor="let link of links" href="{{link[1]}}">{{link[0] | uppercase}}</a>
+  </div>
+  <div class="subheading">
+    <h4>{{subheading | uppercase}}</h4>
+  </div>
+</div>

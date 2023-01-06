@@ -1,9 +1,11 @@
-<header class="header flex-row flex-evenly">
-  <div class="title">
+<header class="flex-row flex-evenly">
+  <div class="header header-title" (click)="test()">
     <h1>{{title | uppercase}}</h1>
-    <h1>{{title | uppercase}}</h1>
+    <h1 class="invert-y">{{title | uppercase}}</h1>
   </div>
   <nav class="navbar flex-row flex-evenly">
-    <a *ngFor="let link of links" href="{{link[1]}}">{{link[0] | uppercase}}</a>
+    <div class="header-title" *ngFor="let link of links">
+      <a class="static-links" href="{{link[1]}}">{{link[0] | uppercase}}</a>
+    </div>
   </nav>
 </header>

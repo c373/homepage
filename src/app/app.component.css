@@ -1,8 +1,7 @@
 ::ng-deep * {
   font-family: sans-serif;
-  --main-text-color: black;
-  --main-bg-color: white;
-  --main-accent-color: aquamarine;
+  --primary-text: black;
+  --secondary-text: white;
 }
 
 ::ng-deep * {
@@ -12,6 +11,7 @@
 ::ng-deep .flex-column {
   display: flex;
   flex-flow: column wrap;
+  justify-content: flex-end;
 }
 
 ::ng-deep .flex-row {
@@ -24,12 +24,38 @@
   justify-content: center;
 }
 
-::ng-deep .flex-h-center {
+::ng-deep .flex-center-cross {
   align-content: center;
 }
 
-::ng-deep .flex-v-center {
+::ng-deep .flex-center-main {
   justify-content: center;
+}
+
+::ng-deep .flex-end {
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+::ng-deep .flex-end-cross {
+  align-content: flex-end;
+}
+
+::ng-deep .flex-end-main {
+  justify-content: flex-end;
+}
+
+::ng-deep .flex-start {
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+::ng-deep .flex-start-cross {
+  align-content: flex-start;
+}
+
+::ng-deep .flex-start-main {
+  justify-content: flex-start;
 }
 
 ::ng-deep .flex-around {
@@ -40,4 +66,35 @@
 ::ng-deep .flex-evenly {
   align-content: space-evenly;
   justify-content: space-evenly;
+}
+
+::ng-deep .navbar {
+  flex-grow: 1;
+}
+
+::ng-deep .header-title {
+  display: flex;
+  flex-flow: column nowrap;
+
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+::ng-deep .invert-y {
+  transform: scale(1, -1);
+  margin-top: -2rem;
+}
+
+::ng-deep a.static-links {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+::ng-deep a:hover.static-links {
+  text-decoration: underline;
+}
+
+::ng-deep a:visited.static-links {
+  text-decoration: none;
 }
