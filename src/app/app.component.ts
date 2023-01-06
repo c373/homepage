@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title = 'CARLOS CRUZ';
+  public title: string = 'First Last';
+  public links: Array<[string, string]> = [
+    ["link", "link"],
+    ["kinl", "link"],
+    ["iknl", "link"],
+    ["ilkn", "link"]
+  ];
 }

@@ -1,8 +1,9 @@
 <header class="header flex-row flex-evenly">
-  <h1 class="title">{{title}}</h1>
+  <div class="title">
+    <h1>{{title | uppercase}}</h1>
+    <h1>{{title | uppercase}}</h1>
+  </div>
   <nav class="navbar flex-row flex-evenly">
-    <a href="https://linkedin.com">LINKEDIN</a>
-    <a href="https://github.com">GITHUB</a>
-    <a href="https://twitter.com">TWITTER</a>
+    <a *ngFor="let link of links" href="{{link[1]}}">{{link[0] | uppercase}}</a>
   </nav>
 </header>

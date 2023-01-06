@@ -1,6 +1,17 @@
 .title {
   flex: 2;
-  text-align: center;
+}
+
+.title h1 {
+  padding: 0;
+  margin: -0.75rem;
+  font-size: 5rem;
+  font-weight: 750;
+  line-height: 5rem;
+}
+
+.title h1:nth-child(2) {
+  transform: scale(1, -1);
 }
 
 .navbar {
@@ -10,6 +21,7 @@
 a {
   font-weight: bold;
   text-decoration: none;
+  color: var(--main-text-color);
 }
 
 a:hover {
@@ -17,6 +29,5 @@ a:hover {
 }
 
 a:visited {
-  color: var(--main-text-color);
   text-decoration: none;
 }
