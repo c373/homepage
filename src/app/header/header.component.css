@@ -1,0 +1,22 @@
+.title {
+  flex: 2;
+  text-align: center;
+}
+
+.navbar {
+  flex: 1;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--main-text-color);
+  text-decoration: none;
+}

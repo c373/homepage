@@ -1,0 +1,43 @@
+::ng-deep * {
+  font-family: sans-serif;
+  --main-text-color: black;
+  --main-bg-color: white;
+  --main-accent-color: aquamarine;
+}
+
+::ng-deep * {
+   /* border: solid black 1px;*/
+}
+
+::ng-deep .flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+::ng-deep .flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+::ng-deep .flex-center {
+  align-content: center;
+  justify-content: center;
+}
+
+::ng-deep .flex-h-center {
+  align-content: center;
+}
+
+::ng-deep .flex-v-center {
+  justify-content: center;
+}
+
+::ng-deep .flex-around {
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+::ng-deep .flex-evenly {
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
